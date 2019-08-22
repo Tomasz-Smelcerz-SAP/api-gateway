@@ -67,6 +67,7 @@ func fixAPI() *gatewayv2alpha1.Api {
 	return &gatewayv2alpha1.Api{
 		ObjectMeta: metav1.ObjectMeta{
 			Name:       "test",
+			Namespace:  "default",
 			Generation: 1,
 		},
 		Spec: gatewayv2alpha1.ApiSpec{
